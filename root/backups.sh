@@ -2,11 +2,8 @@
 WORKDATE=`date "+%m%d%Y"`
 WORKDIR=/mnt/backup/logs
 BACKUPJOBRPT=${WORKDIR}/backupjobs.log
-<<<<<<< HEAD
 MTO=email@user.com
-=======
-MTO=cloudops@xtuple.com
->>>>>>> 7029bc053b04004f300a715cc81083df42d03fb5
+
 SERVERNAME=thymly
 
 runbackups()
