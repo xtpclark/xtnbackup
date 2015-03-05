@@ -75,8 +75,8 @@ mail()
 # Mail
 #=====
 MAILPRGM=/usr/bin/mutt
-export EMAIL=mex01@xtuplecloud.com
-MTO="cloudops@xtuple.com luis.galeano@biofields.com"
+export EMAIL=onsite@xtuplecloud.com
+MTO="cloudops@xtuple.com"
 
 }
 
@@ -233,7 +233,7 @@ echo "Set up Mutt."
 true
 else
 
-$MAILPRGM -e 'set content_type="text/plain"' $MTO -s "Biofields Nightly Backup Details" < ${LOGFILE}
+$MAILPRGM -e 'set content_type="text/plain"' $MTO -s "xTuple Nightly Backup Details" < ${LOGFILE}
 
 # $MAILPRGM -s "Nightly backup details for $SERVERNAME" $MTO < $MES
 fi
