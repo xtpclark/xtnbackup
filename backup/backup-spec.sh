@@ -48,7 +48,6 @@ elif [ $# -gt 1 ] ; then
 fi
 
 
-
 PGBIN=/usr/bin
 WORKDATE=`/bin/date "+%m%d%Y"`
 DUMPVER=`$PGBIN/pg_dump -V | head -1 | cut -d ' ' -f3`
